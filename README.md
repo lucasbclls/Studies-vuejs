@@ -1,4 +1,4 @@
-# estudos-vuejs
+# studies-vuejs
 
 ## Project setup
 ```
