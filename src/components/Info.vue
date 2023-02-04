@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <p v-if="esta_trabalhando">
       Estou trabalhando no momento <br />
       Utilizo as seguintes linguagens de programação
@@ -19,7 +20,7 @@
 
     <ul>
       <li v-for="technology in frontend_technologies" :key="technology.id">
-      {{ technology.language }}
+        {{ technology.language }}
       </li>
     </ul>
     <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}</p>
@@ -39,12 +40,15 @@ export default {
   name: "Info",
   components: {
     Info,
-    Picture,
+    Picture},
+
+    props: {
+     email: String 
+    },
     data() {
       return {
         esta_trabalhando: false,
         mostrar_email: true,
-        email: "plucayg@gmail.com",
         meu_link: "https://google.com",
         backend_technologies: ["JavaScript", "PHP", "C#", "Python"],
         frontend_technologies: [
@@ -54,6 +58,6 @@ export default {
         ],
       };
     },
-  },
-};
+  }
+
 </script>
