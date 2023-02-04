@@ -6,7 +6,7 @@
     <LifeCycle />
     <PessoaCadastro />
     <Info />
-     <Form />
+    <Form />
   </div>
 </template>
 
